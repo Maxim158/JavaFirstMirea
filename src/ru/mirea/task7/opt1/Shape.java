@@ -1,4 +1,4 @@
-package ru.mirea.task7;
+package ru.mirea.task7.opt1;
 
 import java.lang.*;
 

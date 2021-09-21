@@ -1,18 +1,21 @@
-package ru.mirea.task7;
+package ru.mirea.task7.opt1;
 
 public class Circle extends Shape {
     protected double radius;
 
-    public void Circle() {
+    public Circle() {
+        super();
         this.filled = false;
         this.color = "blue";
         radius = 1;
     };
-    public void Circle(double radius) {
+    public Circle(double radius) {
+        super();
         this.filled = false;
         this.color = "blue";
         this.radius = radius; }
-    public void Circle(double radius, String Color, Boolean filled) {
+    public Circle(double radius, String color, Boolean filled) {
+        super();
         this.radius = radius;
         this.color = color;
         this.filled = filled;

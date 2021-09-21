@@ -1,22 +1,25 @@
-package ru.mirea.task7;
+package ru.mirea.task7.opt1;
 
 public class Rectangle extends Shape {
     protected double width;
     protected double length;
 
-    public void Rectangle() {
+    public Rectangle() {
+        super();
         this.filled = false;
         this.color = "blue";
         this.width = 1;
         this.length = 1;
     }
-    public void Circle(double width, double length) {
+    public Rectangle(double width, double length) {
+        super();
         this.filled = false;
         this.color = "blue";
         this.width = width;
         this.length = length;
     }
-    public void Circle(double width, double length, String Color, Boolean filled) {
+    public Rectangle(double width, double length, String color, Boolean filled) {
+        super();
         this.width = width;
         this.length = length;
         this.color = color;
