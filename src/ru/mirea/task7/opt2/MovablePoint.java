@@ -20,15 +20,15 @@ public class MovablePoint implements Movable{
                 '}';
     }
     public void moveUp() {
-        this.y+=ySpeed;
+        this.y += ySpeed;
     }
     public void moveDown() {
-        this.y-=ySpeed;
+        this.y -= ySpeed;
     }
     public void moveRight() {
-        this.x+=xSpeed;
+        this.x += xSpeed;
     }
     public void moveLeft() {
-        this.x-=xSpeed;
+        this.x -= xSpeed;
     }
 }
