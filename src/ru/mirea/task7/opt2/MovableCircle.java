@@ -2,7 +2,7 @@ package ru.mirea.task7.opt2;
 
 public class MovableCircle implements Movable{
     private int radius;
-    MovablePoint center;
+    MovablePoint center = new MovablePoint();
 
     MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
         center.x = x;

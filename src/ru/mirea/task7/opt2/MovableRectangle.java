@@ -1,10 +1,10 @@
 package ru.mirea.task7.opt2;
 
 public class MovableRectangle implements Movable {
-    MovablePoint topLeft;
-    MovablePoint bottomRight;
+    MovablePoint topLeft = new MovablePoint();
+    MovablePoint bottomRight = new MovablePoint();
 
-    MovableRectangle(int x1, int y1, int x2, int y2, int xSpeed, int ySpeed, int radius) {
+    MovableRectangle(int x1, int y1, int x2, int y2, int xSpeed, int ySpeed) {
         topLeft.x = x1;
         bottomRight.x = x2;
         topLeft.y = y1;

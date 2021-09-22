@@ -5,6 +5,12 @@ public class MovablePoint implements Movable{
     int y;
     int xSpeed;
     int ySpeed;
+    public MovablePoint() {
+        x = 0;
+        y = 0;
+        xSpeed = 0;
+        ySpeed = 0;
+    }
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
         this.y = y;
