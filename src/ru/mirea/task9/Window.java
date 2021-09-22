@@ -32,62 +32,51 @@ public class Window {
         frame.add(labelResult);
         frame.add(labelLast);
         frame.add(labelWinner);
-        frame.setVisible(true); buttonAC.addActionListener(new ActionListener() {
+        frame.setVisible(true);
+        buttonAC.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                calculateAC(frame, labelResult, labelLast, labelWinner);
+                goalAC++;
+                labelResult.setText("Result: " + goalAC + " x " + goalRM);
+                labelLast.setText("Last Scorer: AC Milan");
+                if (goalAC > goalRM) {
+                    labelWinner.setText("Winner: AC Milan");
+                } else {
+                    if (goalRM > goalAC) {
+                        labelWinner.setText("Winner: Real Madrid");
+                    } else {
+                        labelWinner.setText("Winner: Draw");
+                    }
+                }
             }
         });
 
         buttonRM.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                calculateRM(frame, labelResult, labelLast, labelWinner);
+                    goalRM++;
+                    labelResult.setText("Result: " + goalAC + " x " + goalRM);
+                    labelLast.setText("Last Scorer: Real Madrid");
+                    if (goalAC > goalRM) {
+                        labelWinner.setText("Winner: AC Milan");
+                    }
+                    else {
+                        if(goalRM > goalAC) {
+                            labelWinner.setText("Winner: Real Madrid");
+                        }
+                        else {
+                            labelWinner.setText("Winner: Draw");
+                        }
+                    }
             }
         });
 
         buttonRST.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                calculateRST(frame, labelResult, labelLast, labelWinner);
+                goalAC = 0;
+                goalRM = 0;
+                labelResult.setText("Result: " + goalAC + " x " + goalRM);
+                labelLast.setText("Last Scorer: N/A");
+                labelWinner.setText("Winner: N/A");
             }
         });
-    }
-
-    public void calculateAC(JFrame frame, JLabel label, JLabel label2, JLabel label3) {
-        goalAC++;
-        label.setText("Result: " + goalAC + " x " + goalRM);
-        label2.setText("Last Scorer: AC Milan");
-        if (goalAC > goalRM) {
-            label3.setText("Winner: AC Milan");
-        }
-        else {
-              if(goalRM > goalAC) {
-                  label3.setText("Winner: Real Madrid");
-            }
-              else {
-                  label3.setText("Winner: Draw");
-              }
-        }
-    }
-    public void calculateRM(JFrame frame, JLabel label, JLabel label2, JLabel label3) {
-        goalRM++;
-        label.setText("Result: " + goalAC + " x " + goalRM);
-        label2.setText("Last Scorer: Real Madrid");
-        if (goalAC > goalRM) {
-            label3.setText("Winner: AC Milan");
-        }
-        else {
-            if(goalRM > goalAC) {
-                label3.setText("Winner: Real Madrid");
-            }
-            else {
-                label3.setText("Winner: Draw");
-            }
-        }
-    }
-    public void calculateRST(JFrame frame, JLabel label, JLabel label2, JLabel label3) {
-        goalAC = 0;
-        goalRM = 0;
-        label.setText("Result: " + goalAC + " x " + goalRM);
-        label2.setText("Last Scorer: N/A");
-        label3.setText("Winner: N/A");
     }
 }
