@@ -21,13 +21,13 @@ public class TestWindow {
 
         while(true) {
             frame.setBackground(Color.white);
-            picture.setIcon(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic1.png","test"));
+            picture.setIcon(new ImageIcon("C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic1.png","test"));
             Thread.sleep(1000);
             frame.setBackground(Color.white);
-            picture.setIcon(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic2.png","test"));
+            picture.setIcon(new ImageIcon("C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic2.png","test"));
             Thread.sleep(1000);
             frame.setBackground(Color.white);
-            picture.setIcon(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic3.png","test"));
+            picture.setIcon(new ImageIcon("C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt3\\pic3.png","test"));
             Thread.sleep(1000);
         }
     }

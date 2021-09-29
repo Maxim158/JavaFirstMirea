@@ -28,7 +28,7 @@ public class Window extends JFrame {
         controls = new Container();
         controls = getContentPane();
         controls.setLayout(new FlowLayout());
-        pictureLabel = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt2\\Picture.jpg","test"));
+        pictureLabel = new JLabel(new ImageIcon("C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task8\\opt2\\Picture.jpg","test"));
         controls.add(pictureLabel);
     }
 }
