@@ -33,6 +33,7 @@ public class Window {
         frame.add(labelLast);
         frame.add(labelWinner);
         frame.setVisible(true);
+
         buttonAC.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 goalAC++;
