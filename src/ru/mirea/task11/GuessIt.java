@@ -20,7 +20,7 @@ public class GuessIt {
         JLabel labelTry = new JLabel("Attempts left: " + attempt);
         labelTry.setBounds(265,30,100,20);
         JLabel labelGuess = new JLabel("");
-        labelGuess.setBounds(225,130,200,20);
+        labelGuess.setBounds(222,130,300,20);
         JButton buttonGuess = new JButton("Guess");
         buttonGuess.setBounds(250,230,100,30);
         JButton buttonRST = new JButton("New Game");
@@ -78,9 +78,8 @@ public class GuessIt {
                     if (attempt == 0) {
                         JOptionPane.showMessageDialog(null, "You lose! Guessing number was: " + guessingNumber + "\n Try again.", "Lose", JOptionPane.INFORMATION_MESSAGE);
                         attempt = countOfAttempt;
-                        guessingNumber = RandomNumber();
-                        JLabel labelGuess = new JLabel("");
                         labelGuess.setText("");
+                        labelTry.setText("Attempts left: " + attempt);
                     }
                 }
                 catch(Exception a) {
@@ -105,7 +104,6 @@ public class GuessIt {
                 catch(Exception a) {
                     JOptionPane.showMessageDialog(null, "Error in Numbers !", "alert", JOptionPane.ERROR_MESSAGE);
                 }
-
             }
         });
     }
@@ -115,4 +113,3 @@ public class GuessIt {
     }
 
 }
-
