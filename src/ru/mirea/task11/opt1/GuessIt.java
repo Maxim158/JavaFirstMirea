@@ -1,4 +1,4 @@
-package ru.mirea.task11;
+package ru.mirea.task11.opt1;
 
 
 import javax.swing.*;
@@ -14,7 +14,6 @@ public class GuessIt {
     public GuessIt() {
         JFrame frame = new JFrame("GuessIt");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBackground(Color.white);
         frame.setSize(600, 350);
         frame.setResizable(false);
         JLabel labelTry = new JLabel("Attempts left: " + attempt);
@@ -37,6 +36,8 @@ public class GuessIt {
         textSetMax.setBounds(30,110,100,20);
         JLabel current = new JLabel("Count of attempts - " + countOfAttempt + " Max number - " + maxNumber);
         current.setBounds(200,10,400,20);
+        setAttempts.setText(String.valueOf(attempt));
+        setMax.setText(String.valueOf(maxNumber));
         frame.setLayout(null);
         frame.add(current);
         frame.add(labelTry);
@@ -59,6 +60,7 @@ public class GuessIt {
             public void actionPerformed(ActionEvent e) {
                 try {
                     int x1 = Integer.parseInt(input.getText().trim());
+                    input.setText("");
 
                     if (x1 == guessingNumber) {
                         JOptionPane.showMessageDialog(null, "Congratulations! You Win!", "Win", JOptionPane.INFORMATION_MESSAGE);
@@ -100,6 +102,8 @@ public class GuessIt {
                     guessingNumber = RandomNumber();
                     labelTry.setText("Attempts left: " + attempt);
                     current.setText("Count of attempts - " + countOfAttempt + " Max number - " + maxNumber);
+                    setAttempts.setText(String.valueOf(attempt));
+                    setMax.setText(String.valueOf(maxNumber));
                 }
                 catch(Exception a) {
                     JOptionPane.showMessageDialog(null, "Error in Numbers !", "alert", JOptionPane.ERROR_MESSAGE);
