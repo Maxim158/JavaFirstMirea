@@ -79,6 +79,7 @@ public class GuessIt {
                     }
                     if (attempt == 0) {
                         JOptionPane.showMessageDialog(null, "You lose! Guessing number was: " + guessingNumber + "\n Try again.", "Lose", JOptionPane.INFORMATION_MESSAGE);
+                        guessingNumber = RandomNumber();
                         attempt = countOfAttempt;
                         labelGuess.setText("");
                         labelTry.setText("Attempts left: " + attempt);
