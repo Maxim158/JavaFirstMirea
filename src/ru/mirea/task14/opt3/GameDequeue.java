@@ -35,7 +35,7 @@ public class GameDequeue {
                 talon1 += first.peekFirst();
                 talon2 += second.peekFirst();
             }
-            else if (first.peekFirst() > second.peekFirst() && (second.peekFirst() != 0 && first.peekFirst() != 9)) {
+            else if ((first.peekFirst() > second.peekFirst() || (first.peekFirst() == 0 && second.peekFirst() == 9 )) && (second.peekFirst() != 0 && first.peekFirst() != 9)) {
                 talon1 += first.peekFirst();
                 talon1 += second.peekFirst();
             }else {

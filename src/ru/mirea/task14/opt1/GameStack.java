@@ -33,7 +33,7 @@ public class GameStack {
                 talon1 += first.peek();
                 talon2 += second.peek();
             }
-            else if (first.peek() > second.peek() && (second.peek() != 0 && first.peek() != 9)) {
+            else if ((first.peek() > second.peek() || (first.peek() == 0 && second.peek() == 9 ) ) && (second.peek() != 0 && first.peek() != 9) ) {
                 talon1 += first.peek();
                 talon1 += second.peek();
             }else {
