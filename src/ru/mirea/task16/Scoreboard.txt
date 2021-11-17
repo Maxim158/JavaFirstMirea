@@ -1,0 +1,33 @@
+Player: 123 Score: 436 Tue Nov 16 21:15:58 MSK 2021
+Player: 123 Score: 1135 Tue Nov 16 21:25:07 MSK 2021
+Player: vcvhcf Score: -29 Tue Nov 16 21:27:36 MSK 2021
+Player: test Score: 62 Tue Nov 16 21:33:52 MSK 2021
+Player: 123 Score: 56 Tue Nov 16 21:38:46 MSK 2021
+Player: das Score: 289 Tue Nov 16 21:39:35 MSK 2021
+Player: 213 Score: 291 Tue Nov 16 21:40:43 MSK 2021
+Player: 213 Score: 303 Tue Nov 16 21:41:03 MSK 2021
+Player: 213 Score: 651 Tue Nov 16 21:41:28 MSK 2021
+Player: 34 Score: 57 Tue Nov 16 21:46:19 MSK 2021
+Player: tuty Score: 151 Tue Nov 16 21:51:23 MSK 2021
+Player: l;' Score: 40 Tue Nov 16 21:51:56 MSK 2021
+Player: yut Score: 3069 Tue Nov 16 21:57:46 MSK 2021
+Player: sdf Score: 42 Tue Nov 16 21:59:27 MSK 2021
+Player:  Score: 555 Wed Nov 17 01:02:34 MSK 2021
+Player:  Score: -59 Wed Nov 17 01:05:09 MSK 2021
+Player:  Score: 938 Wed Nov 17 01:22:51 MSK 2021
+Player: sdf Score: 432 Apple eaten: 6Time played: 16Wed Nov 17 01:24:17 MSK 2021
+Player: asd Score: 287 Apple eaten: 4 Time played: 11 Wed Nov 17 01:25:11 MSK 2021
+Player: test Score: 747 Apple eaten: 13 Wed Nov 17 09:03:09 MSK 2021
+Player:  Score: 738 Apple eaten: 10 Wed Nov 17 09:14:33 MSK 2021
+Player:  Score: 379 Apple eaten: 6 Wed Nov 17 09:15:15 MSK 2021
+Player:  Score: 160 Apple eaten: 2 Wed Nov 17 10:17:22 MSK 2021
+Player:  Score: 76 Apple eaten: 1 Wed Nov 17 10:17:45 MSK 2021
+Player:  Score: 137 Apple eaten: 2 Wed Nov 17 10:18:31 MSK 2021
+Player:  Score: 75 Apple eaten: 2 Wed Nov 17 10:20:37 MSK 2021
+Player:  Score: 716 Apple eaten: 10 Wed Nov 17 11:46:13 MSK 2021
+Player:  Score: 115 Apple eaten: 2 Wed Nov 17 11:46:34 MSK 2021
+Player:  Score: 30 Apple eaten: 1 Wed Nov 17 11:48:36 MSK 2021
+Player:  Score: 54 Apple eaten: 1 Wed Nov 17 11:50:51 MSK 2021
+Player:  Score: 459 Apple eaten: 6 Wed Nov 17 11:52:10 MSK 2021
+Player: asd Score: 245 Apple eaten: 3 Wed Nov 17 11:52:46 MSK 2021
+Player: qwe Score: 148 Apple eaten: 2 Wed Nov 17 11:53:36 MSK 2021
