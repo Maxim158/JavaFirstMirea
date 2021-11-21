@@ -2,14 +2,21 @@ package ru.mirea.task16;
 
 import sun.dc.path.PathException;
 
+import javax.naming.Name;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
 
 enum direct {
     up, down, left, right;
@@ -23,14 +30,22 @@ enum snake_color {
 enum apple_color {
     classic, gold, worm, pear, banana;
 }
-
 public class SnakeGame extends JPanel implements  ActionListener {
+
+    static class NameException extends Exception {
+        public NameException(String name) {
+            super(name);
+        }
+    }
     private MainWindow game;
     private JFrame menu;
     private back_color background = back_color.black;
     private snake_color skin = snake_color.green;
     private apple_color appleskin = apple_color.classic;
     private Color back_col = Color.BLACK;
+    java.util.List<String> scoreboard = new ArrayList<>();
+    String regex = "^[a-zA-Z]*$";
+    Pattern pattern = Pattern.compile(regex);
     private final int SIZEX = 900;
     private final int SIZEY = 750;
     private final int DOT_SIZE = 25;
@@ -95,9 +110,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
             if(dots != ALL_DOTS) {
                 createApple();
             } else {
-                timer.stop();
                 inGame = false;
-                scoreBuild();
             }
         }
     }
@@ -106,9 +119,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
         if ( dots > 3) {
             for (int i = dots; i > 0; i--) {
                 if (x[0] == x[i] && y[0] == y[i]) {
-                    timer.stop();
                     inGame = false;
-                    scoreBuild();
                 }
             }
         }
@@ -261,6 +272,11 @@ public class SnakeGame extends JPanel implements  ActionListener {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (inGame) {
+            if (border) {
+                g.setColor(Color.RED);
+                g.drawRect(1,52,901,673);
+                g.drawRect(0,51,903,675);
+            }
             g.setColor(Color.lightGray);
             g.fillRect(0,0,910,50);
             g.setColor(Color.BLACK);
@@ -283,10 +299,15 @@ public class SnakeGame extends JPanel implements  ActionListener {
         else if (dots != ALL_DOTS ){
             g.setColor(Color.WHITE);
             g.drawString("Game Over! Press any key to continue...",SIZEX/2 - 100,SIZEY/2);
-
+            border = false;
+            timer.stop();
+            scoreBuild();
         } else {
             g.setColor(Color.WHITE);
             g.drawString("You Win",SIZEX/2 - 50,SIZEY/2);
+            border = false;
+            timer.stop();
+            scoreBuild();
         }
     }
 
@@ -321,8 +342,8 @@ public class SnakeGame extends JPanel implements  ActionListener {
                 }
                 ready = false;
             } else if (!inGame) {
-                game.dispose();
-                Menu(game);
+                    game.setVisible(false);
+                    Menu(game);
             }
         }
     }
@@ -332,7 +353,8 @@ public class SnakeGame extends JPanel implements  ActionListener {
         try {
             FileWriter writer = new FileWriter("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Scoreboard.txt", true);
             BufferedWriter bufferWriter = new BufferedWriter(writer);
-            bufferWriter.write("Player: " + name + " Score: " + score + " Apple eaten: " + apple_eaten + " " + new Date() + "\n");
+            bufferWriter.write("Player: " + name + " Score: " + score + " Apple eaten: " + apple_eaten + " " + new Date() + " " + game.hashCode() + "\n");
+            scoreboard.add("Player: " + name + " Score: " + score + " Apple eaten: " + apple_eaten + " " + new Date());
             bufferWriter.close();
         } catch (IOException ex) {
             System.out.println(ex);
@@ -386,8 +408,13 @@ public class SnakeGame extends JPanel implements  ActionListener {
         menu.setVisible(true);
         play.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent exd)  {
+
                 try {
-                    name = Input.getText();
+                    if (Input.getText().length() != 0) {
+                        name = Input.getText();
+                        Matcher matcher = pattern.matcher(name);
+                        if (matcher.matches() == false) throw new NameException(name);
+                    }
                     GAME_SPEED = Integer.parseInt(speed_in.getText());
                     setBackground(back_col);
                     loadImageSkin();
@@ -396,12 +423,14 @@ public class SnakeGame extends JPanel implements  ActionListener {
                     initGame();
                     addKeyListener(new FieldKeyListener());
                     setFocusable(true);
-                    menu.dispose();
+                    menu.setVisible(false);
                     game.setVisible(true);
                 }
-                catch (Exception a) {
-                    JOptionPane.showMessageDialog(null, "Incorrect game speed!", "alert", JOptionPane.ERROR_MESSAGE);
+                catch (NumberFormatException | NameException n) {
+                    JOptionPane.showMessageDialog(null, "Incorrect Name/Game Speed!", "alert", JOptionPane.ERROR_MESSAGE);
                     speed_in.setText("100");
+                    //JOptionPane.showMessageDialog(null, "Incorrect player name!", "alert", JOptionPane.ERROR_MESSAGE);
+                    Input.setText("");
                 }
             }
         });
@@ -435,7 +464,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
     }
 
     public void skinChanger(){
-        menu.dispose();
+        menu.setVisible(false);
         JFrame snakeFrame = new JFrame("Skin Changer");
         snakeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         snakeFrame.getContentPane().setBackground(Color.white);
@@ -588,7 +617,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                snakeFrame.dispose();
+                snakeFrame.setVisible(false);
                 menu.setVisible(true);
             }
         });
@@ -596,7 +625,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
     }
 
     public void appleChanger(){
-        menu.dispose();
+        menu.setVisible(false);
         JFrame appleFrame = new JFrame("Apple Changer");
         appleFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         appleFrame.getContentPane().setBackground(Color.white);
@@ -637,7 +666,6 @@ public class SnakeGame extends JPanel implements  ActionListener {
         appleFrame.add(app4);
         appleFrame.add(app5);
         appleFrame.add(ok);
-
         switch (appleskin) {
             case classic:
                 apple1.setEnabled(false);
@@ -655,6 +683,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
                 apple5.setEnabled(false);
                 break;
         }
+        appleFrame.setVisible(true);
         apple1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -718,15 +747,14 @@ public class SnakeGame extends JPanel implements  ActionListener {
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                appleFrame.dispose();
+                appleFrame.setVisible(false);
                 menu.setVisible(true);
             }
         });
-        appleFrame.setVisible(true);
     }
 
     public void backgroundChanger(){
-        menu.dispose();
+        menu.setVisible(false);
         JFrame backFrame = new JFrame("Background Changer");
         backFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         backFrame.getContentPane().setBackground(Color.white);
@@ -802,7 +830,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                backFrame.dispose();
+                backFrame.setVisible(false);
                 menu.setVisible(true);
             }
         });

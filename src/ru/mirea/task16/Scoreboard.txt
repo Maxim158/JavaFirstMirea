@@ -38,3 +38,73 @@ Player:  Score: 56 Apple eaten: 1 Sun Nov 21 14:07:18 MSK 2021
 Player:  Score: 53 Apple eaten: 1 Sun Nov 21 14:07:28 MSK 2021
 Player:  Score: 67 Apple eaten: 2 Sun Nov 21 14:37:00 MSK 2021
 Player:  Score: 71 Apple eaten: 1 Sun Nov 21 14:37:09 MSK 2021
+Player:  Score: 71 Apple eaten: 1 Sun Nov 21 17:30:23 MSK 2021
+Player:  Score: 30 Apple eaten: 1 Sun Nov 21 17:30:41 MSK 2021
+Player:  Score: 73 Apple eaten: 1 Sun Nov 21 17:44:26 MSK 2021
+Player:  Score: 74 Apple eaten: 1 Sun Nov 21 17:44:31 MSK 2021
+Player:  Score: 15 Apple eaten: 2 Sun Nov 21 17:46:05 MSK 2021
+Player:  Score: 60 Apple eaten: 1 Sun Nov 21 17:47:41 MSK 2021
+Player:  Score: 578 Apple eaten: 8 Sun Nov 21 22:52:02 MSK 2021
+Player: 123 Score: 310 Apple eaten: 5 Sun Nov 21 23:03:37 MSK 2021 865868808
+Player:  Score: 269 Apple eaten: 4 Sun Nov 21 23:04:05 MSK 2021 865868808
+Player:  Score: 62 Apple eaten: 1 Sun Nov 21 23:04:44 MSK 2021 1610400145
+Player:  Score: 215 Apple eaten: 3 Sun Nov 21 23:04:56 MSK 2021 1610400145
+Player:  Score: 228 Apple eaten: 3 Sun Nov 21 23:07:30 MSK 2021 1604854731
+Player:  Score: -18 Apple eaten: 0 Sun Nov 21 23:07:40 MSK 2021 1604854731
+Player:  Score: 89 Apple eaten: 2 Sun Nov 21 23:08:38 MSK 2021 637570394
+Player: 123 Score: 55 Apple eaten: 1 Sun Nov 21 23:08:48 MSK 2021 637570394
+Player:  Score: -6 Apple eaten: 0 Sun Nov 21 23:08:54 MSK 2021 637570394
+Player:  Score: 78 Apple eaten: 1 Sun Nov 21 23:09:04 MSK 2021 637570394
+Player:  Score: 37 Apple eaten: 1 Sun Nov 21 23:10:01 MSK 2021 1604854731
+Player:  Score: 63 Apple eaten: 1 Sun Nov 21 23:10:08 MSK 2021 1604854731
+Player:  Score: -23 Apple eaten: 0 Sun Nov 21 23:10:12 MSK 2021 1604854731
+Player:  Score: -11 Apple eaten: 0 Sun Nov 21 23:11:45 MSK 2021 865868808
+Player:  Score: -8 Apple eaten: 0 Sun Nov 21 23:11:52 MSK 2021 865868808
+Player:  Score: -7 Apple eaten: 0 Sun Nov 21 23:11:55 MSK 2021 865868808
+Player:  Score: -18 Apple eaten: 0 Sun Nov 21 23:12:01 MSK 2021 865868808
+Player:  Score: -8 Apple eaten: 0 Sun Nov 21 23:12:16 MSK 2021 1548538624
+Player:  Score: -10 Apple eaten: 0 Sun Nov 21 23:12:22 MSK 2021 1548538624
+Player:  Score: -20 Apple eaten: 0 Sun Nov 21 23:12:28 MSK 2021 1548538624
+Player:  Score: -7 Apple eaten: 0 Sun Nov 21 23:12:43 MSK 2021 1035811160
+Player:  Score: -7 Apple eaten: 0 Sun Nov 21 23:12:48 MSK 2021 1035811160
+Player:  Score: -6 Apple eaten: 0 Sun Nov 21 23:12:51 MSK 2021 1035811160
+Player:  Score: -20 Apple eaten: 0 Sun Nov 21 23:15:38 MSK 2021 865868808
+Player:  Score: -8 Apple eaten: 0 Sun Nov 21 23:15:55 MSK 2021 1548538624
+Player: ads Score: 594 Apple eaten: 8 Sun Nov 21 23:16:29 MSK 2021 1548538624
+Player: ads Score: 594 Apple eaten: 8 Sun Nov 21 23:16:30 MSK 2021 1548538624
+Player:  Score: 3 Apple eaten: 1 Sun Nov 21 23:17:18 MSK 2021 958330194
+Player:  Score: 115 Apple eaten: 2 Sun Nov 21 23:17:37 MSK 2021 958330194
+Player:  Score: -34 Apple eaten: 0 Sun Nov 21 23:17:48 MSK 2021 958330194
+Player: dfg Score: 78 Apple eaten: 1 Sun Nov 21 23:18:03 MSK 2021 958330194
+Player: ghj Score: -6 Apple eaten: 0 Sun Nov 21 23:18:14 MSK 2021 865868808
+Player: klj Score: -9 Apple eaten: 0 Sun Nov 21 23:18:20 MSK 2021 865868808
+Player:   Score: 62 Apple eaten: 1 Sun Nov 21 23:18:31 MSK 2021 865868808
+Player:  Score: 61 Apple eaten: 1 Sun Nov 21 23:18:45 MSK 2021 865868808
+Player:  Score: -5 Apple eaten: 0 Sun Nov 21 23:19:01 MSK 2021 514026201
+Player:  Score: -18 Apple eaten: 0 Sun Nov 21 23:19:07 MSK 2021 514026201
+Player:  Score: -6 Apple eaten: 0 Sun Nov 21 23:19:15 MSK 2021 514026201
+Player:  Score: -9 Apple eaten: 0 Sun Nov 21 23:19:33 MSK 2021 1993338110
+Player:  Score: -7 Apple eaten: 0 Sun Nov 21 23:19:40 MSK 2021 1993338110
+Player:  Score: -7 Apple eaten: 0 Sun Nov 21 23:19:47 MSK 2021 1993338110
+Player:  Score: 38 Apple eaten: 1 Sun Nov 21 23:20:22 MSK 2021 1025640518
+Player:  Score: -21 Apple eaten: 0 Sun Nov 21 23:20:29 MSK 2021 1025640518
+Player:  Score: -23 Apple eaten: 0 Sun Nov 21 23:20:39 MSK 2021 1025640518
+Player:  Score: -11 Apple eaten: 0 Sun Nov 21 23:23:25 MSK 2021 1320203703
+Player:  Score: 41 Apple eaten: 1 Sun Nov 21 23:23:47 MSK 2021 1320203703
+Player:  Score: 59 Apple eaten: 1 Sun Nov 21 23:23:54 MSK 2021 1320203703
+Player:  Score: -5 Apple eaten: 0 Sun Nov 21 23:24:40 MSK 2021 1588635107
+Player:  Score: -13 Apple eaten: 0 Sun Nov 21 23:24:44 MSK 2021 1588635107
+Player:  Score: -6 Apple eaten: 0 Sun Nov 21 23:24:50 MSK 2021 1588635107
+Player: No Name Score: 97 Apple eaten: 2 Mon Nov 22 00:02:31 MSK 2021 1851694228
+Player: A Score: 46 Apple eaten: 1 Mon Nov 22 00:13:08 MSK 2021 880732694
+Player: B Score: -11 Apple eaten: 0 Mon Nov 22 00:13:20 MSK 2021 880732694
+Player: C Score: -9 Apple eaten: 0 Mon Nov 22 00:13:24 MSK 2021 880732694
+Player: a Score: 110 Apple eaten: 2 Mon Nov 22 00:14:01 MSK 2021 1022120323
+Player: A Score: 79 Apple eaten: 1 Mon Nov 22 00:14:07 MSK 2021 1022120323
+Player: a Score: 143 Apple eaten: 2 Mon Nov 22 00:25:25 MSK 2021 120700657
+Player: asd Score: 67 Apple eaten: 1 Mon Nov 22 00:27:48 MSK 2021 1699743514
+Player: No Name Score: -8 Apple eaten: 0 Mon Nov 22 00:29:25 MSK 2021 278782296
+Player: ghj Score: -9 Apple eaten: 0 Mon Nov 22 00:29:35 MSK 2021 278782296
+Player: ghj Score: -19 Apple eaten: 0 Mon Nov 22 00:29:42 MSK 2021 278782296
+Player: No Name Score: 74 Apple eaten: 1 Mon Nov 22 00:32:47 MSK 2021 888263690
+Player: No Name Score: -4 Apple eaten: 0 Mon Nov 22 00:32:55 MSK 2021 888263690
