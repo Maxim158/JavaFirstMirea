@@ -31,3 +31,10 @@ Player:  Score: 54 Apple eaten: 1 Wed Nov 17 11:50:51 MSK 2021
 Player:  Score: 459 Apple eaten: 6 Wed Nov 17 11:52:10 MSK 2021
 Player: asd Score: 245 Apple eaten: 3 Wed Nov 17 11:52:46 MSK 2021
 Player: qwe Score: 148 Apple eaten: 2 Wed Nov 17 11:53:36 MSK 2021
+Player:  Score: 680 Apple eaten: 10 Wed Nov 17 12:05:54 MSK 2021
+Player:  Score: 115 Apple eaten: 2 Sat Nov 20 22:32:17 MSK 2021
+Player:  Score: 226 Apple eaten: 4 Sun Nov 21 00:41:09 MSK 2021
+Player:  Score: 56 Apple eaten: 1 Sun Nov 21 14:07:18 MSK 2021
+Player:  Score: 53 Apple eaten: 1 Sun Nov 21 14:07:28 MSK 2021
+Player:  Score: 67 Apple eaten: 2 Sun Nov 21 14:37:00 MSK 2021
+Player:  Score: 71 Apple eaten: 1 Sun Nov 21 14:37:09 MSK 2021
