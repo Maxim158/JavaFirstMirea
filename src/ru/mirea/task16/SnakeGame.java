@@ -1,7 +1,5 @@
 package ru.mirea.task16;
 
-import sun.dc.path.PathException;
-
 import javax.naming.Name;
 import javax.swing.*;
 import java.awt.*;
@@ -37,6 +35,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
             super(name);
         }
     }
+    private String path = "C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\";
     private MainWindow game;
     private JFrame menu;
     private back_color background = back_color.black;
@@ -167,63 +166,63 @@ public class SnakeGame extends JPanel implements  ActionListener {
         ImageIcon image_snake_head_right;
         switch (skin) {
             case green:
-                image_snake_body = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_body.png");
+                image_snake_body = new ImageIcon(path + "Snake\\Green\\Snake_body.png");
                 snake_body = image_snake_body.getImage();
-                image_snake_head_up = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_up.png");
+                image_snake_head_up = new ImageIcon(path + "Snake\\Green\\Snake_head_up.png");
                 snake_head_up = image_snake_head_up.getImage();
-                image_snake_head_down = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_down.png");
+                image_snake_head_down = new ImageIcon(path + "Snake\\Green\\Snake_head_down.png");
                 snake_head_down = image_snake_head_down.getImage();
-                image_snake_head_left = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_left.png");
+                image_snake_head_left = new ImageIcon(path + "Snake\\Green\\Snake_head_left.png");
                 snake_head_left = image_snake_head_left.getImage();
-                image_snake_head_right = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_right.png");
+                image_snake_head_right = new ImageIcon(path + "Snake\\Green\\Snake_head_right.png");
                 snake_head_right = image_snake_head_right.getImage();
                 break;
             case red:
-                image_snake_body = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_body.png");
+                image_snake_body = new ImageIcon(path + "Snake\\Red\\Snake_body.png");
                 snake_body = image_snake_body.getImage();
-                image_snake_head_up = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_head_up.png");
+                image_snake_head_up = new ImageIcon(path + "Snake\\Red\\Snake_head_up.png");
                 snake_head_up = image_snake_head_up.getImage();
-                image_snake_head_down = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_head_down.png");
+                image_snake_head_down = new ImageIcon(path + "Snake\\Red\\Snake_head_down.png");
                 snake_head_down = image_snake_head_down.getImage();
-                image_snake_head_left = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_head_left.png");
+                image_snake_head_left = new ImageIcon(path + "Snake\\Red\\Snake_head_left.png");
                 snake_head_left = image_snake_head_left.getImage();
-                image_snake_head_right = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_head_right.png");
+                image_snake_head_right = new ImageIcon(path + "Snake\\Red\\Snake_head_right.png");
                 snake_head_right = image_snake_head_right.getImage();
                 break;
             case blue:
-                image_snake_body = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_body.png");
+                image_snake_body = new ImageIcon(path + "Snake\\Blue\\Snake_body.png");
                 snake_body = image_snake_body.getImage();
-                image_snake_head_up = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_head_up.png");
+                image_snake_head_up = new ImageIcon(path + "Snake\\Blue\\Snake_head_up.png");
                 snake_head_up = image_snake_head_up.getImage();
-                image_snake_head_down = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_head_down.png");
+                image_snake_head_down = new ImageIcon(path + "Snake\\Blue\\Snake_head_down.png");
                 snake_head_down = image_snake_head_down.getImage();
-                image_snake_head_left = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_head_left.png");
+                image_snake_head_left = new ImageIcon(path + "Snake\\Blue\\Snake_head_left.png");
                 snake_head_left = image_snake_head_left.getImage();
-                image_snake_head_right = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_head_right.png");
+                image_snake_head_right = new ImageIcon(path + "Snake\\Blue\\Snake_head_right.png");
                 snake_head_right = image_snake_head_right.getImage();
                 break;
             case custom1:
-                image_snake_body = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_body.png");
+                image_snake_body = new ImageIcon(path + "Snake\\Custom1\\Snake_body.png");
                 snake_body = image_snake_body.getImage();
-                image_snake_head_up = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_head_up.png");
+                image_snake_head_up = new ImageIcon(path + "Snake\\Custom1\\Snake_head_up.png");
                 snake_head_up = image_snake_head_up.getImage();
-                image_snake_head_down = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_head_down.png");
+                image_snake_head_down = new ImageIcon(path + "Snake\\Custom1\\Snake_head_down.png");
                 snake_head_down = image_snake_head_down.getImage();
-                image_snake_head_left = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_head_left.png");
+                image_snake_head_left = new ImageIcon(path + "Snake\\Custom1\\Snake_head_left.png");
                 snake_head_left = image_snake_head_left.getImage();
-                image_snake_head_right = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_head_right.png");
+                image_snake_head_right = new ImageIcon(path + "Snake\\Custom1\\Snake_head_right.png");
                 snake_head_right = image_snake_head_right.getImage();
                 break;
             case custom2:
-                image_snake_body = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_body.png");
+                image_snake_body = new ImageIcon(path + "Snake\\Custom2\\Snake_body.png");
                 snake_body = image_snake_body.getImage();
-                image_snake_head_up = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_head_up.png");
+                image_snake_head_up = new ImageIcon(path + "Snake\\Custom2\\Snake_head_up.png");
                 snake_head_up = image_snake_head_up.getImage();
-                image_snake_head_down = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_head_down.png");
+                image_snake_head_down = new ImageIcon(path + "Snake\\Custom2\\Snake_head_down.png");
                 snake_head_down = image_snake_head_down.getImage();
-                image_snake_head_left = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_head_left.png");
+                image_snake_head_left = new ImageIcon(path + "Snake\\Custom2\\Snake_head_left.png");
                 snake_head_left = image_snake_head_left.getImage();
-                image_snake_head_right = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_head_right.png");
+                image_snake_head_right = new ImageIcon(path + "Snake\\Custom2\\Snake_head_right.png");
                 snake_head_right = image_snake_head_right.getImage();
                 break;
         }
@@ -233,23 +232,23 @@ public class SnakeGame extends JPanel implements  ActionListener {
         ImageIcon image_apple;
         switch (appleskin) {
             case classic:
-                image_apple = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Classic\\Apple.png");
+                image_apple = new ImageIcon(path + "Apple\\Classic\\Apple.png");
                 apple = image_apple.getImage();
                 break;
             case worm:
-                image_apple = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Worm\\Apple.png");
+                image_apple = new ImageIcon(path + "Apple\\Worm\\Apple.png");
                 apple = image_apple.getImage();
                 break;
             case pear:
-                image_apple = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Pear\\Apple.png");
+                image_apple = new ImageIcon(path + "Apple\\Pear\\Apple.png");
                 apple = image_apple.getImage();
                 break;
             case gold:
-                image_apple = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Gold\\Apple.png");
+                image_apple = new ImageIcon(path + "Apple\\Gold\\Apple.png");
                 apple = image_apple.getImage();
                 break;
             case banana:
-                image_apple = new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Banana\\Apple.png");
+                image_apple = new ImageIcon(path + "Apple\\Banana\\Apple.png");
                 apple = image_apple.getImage();
                 break;
         }
@@ -274,8 +273,8 @@ public class SnakeGame extends JPanel implements  ActionListener {
         if (inGame) {
             if (border) {
                 g.setColor(Color.RED);
-                g.drawRect(1,52,901,673);
-                g.drawRect(0,51,903,675);
+                g.drawRect(1,52,908,673);
+                g.drawRect(0,51,910,675);
             }
             g.setColor(Color.lightGray);
             g.fillRect(0,0,910,50);
@@ -369,7 +368,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
         menu.setResizable(false);
         menu.setLocationRelativeTo(null);
         menu.setLayout(null);
-        JLabel gamePic = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_up.png"));
+        JLabel gamePic = new JLabel(new ImageIcon(path + "Snake\\Green\\Snake_head_up.png"));
         gamePic.setBounds(280, 10, 25, 25);
         JLabel gameName = new JLabel("SNAKE");
         gameName.setFont(new Font("Serif", Font.PLAIN, 28));
@@ -484,21 +483,21 @@ public class SnakeGame extends JPanel implements  ActionListener {
         snake4.setBounds(20, 200, 100, 30);
         snake5.setBounds(200, 200, 100, 30);
         ok.setBounds(175,300,150,30);
-        JLabel greensnake1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_head_up.png"));
-        JLabel greensnake2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_body.png"));
-        JLabel greensnake3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Green\\Snake_body.png"));
-        JLabel bluesnake1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_head_up.png"));
-        JLabel bluesnake2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_body.png"));
-        JLabel bluesnake3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Blue\\Snake_body.png"));
-        JLabel redsnake1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_head_up.png"));
-        JLabel redsnake2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_body.png"));
-        JLabel redsnake3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Red\\Snake_body.png"));
-        JLabel customsnake1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_head_up.png"));
-        JLabel customsnake2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_body.png"));
-        JLabel customsnake3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom1\\Snake_body.png"));
-        JLabel custom2snake1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_head_up.png"));
-        JLabel custom2snake2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_body.png"));
-        JLabel custom2snake3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Snake\\Custom2\\Snake_body.png"));
+        JLabel greensnake1 = new JLabel(new ImageIcon(path + "Snake\\Green\\Snake_head_up.png"));
+        JLabel greensnake2 = new JLabel(new ImageIcon(path + "Snake\\Green\\Snake_body.png"));
+        JLabel greensnake3 = new JLabel(new ImageIcon(path + "Snake\\Green\\Snake_body.png"));
+        JLabel bluesnake1 = new JLabel(new ImageIcon(path + "Snake\\Blue\\Snake_head_up.png"));
+        JLabel bluesnake2 = new JLabel(new ImageIcon(path + "Snake\\Blue\\Snake_body.png"));
+        JLabel bluesnake3 = new JLabel(new ImageIcon(path + "Snake\\Blue\\Snake_body.png"));
+        JLabel redsnake1 = new JLabel(new ImageIcon(path + "Snake\\Red\\Snake_head_up.png"));
+        JLabel redsnake2 = new JLabel(new ImageIcon(path + "Snake\\Red\\Snake_body.png"));
+        JLabel redsnake3 = new JLabel(new ImageIcon(path + "Snake\\Red\\Snake_body.png"));
+        JLabel customsnake1 = new JLabel(new ImageIcon(path + "Snake\\Custom1\\Snake_head_up.png"));
+        JLabel customsnake2 = new JLabel(new ImageIcon(path + "Snake\\Custom1\\Snake_body.png"));
+        JLabel customsnake3 = new JLabel(new ImageIcon(path + "Snake\\Custom1\\Snake_body.png"));
+        JLabel custom2snake1 = new JLabel(new ImageIcon(path + "Snake\\Custom2\\Snake_head_up.png"));
+        JLabel custom2snake2 = new JLabel(new ImageIcon(path + "Snake\\Custom2\\Snake_body.png"));
+        JLabel custom2snake3 = new JLabel(new ImageIcon(path + "Snake\\Custom2\\Snake_body.png"));
         greensnake1.setBounds(30,12,25,25);
         greensnake2.setBounds(40,35,25,25);
         greensnake3.setBounds(60,50,25,25);
@@ -645,11 +644,11 @@ public class SnakeGame extends JPanel implements  ActionListener {
         apple4.setBounds(20, 200, 100, 30);
         apple5.setBounds(200, 200, 100, 30);
         ok.setBounds(175,300,150,30);
-        JLabel app1 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Classic\\Apple.png"));
-        JLabel app2 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Worm\\Apple.png"));
-        JLabel app3 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Gold\\Apple.png"));
-        JLabel app4 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Pear\\Apple.png"));
-        JLabel app5 = new JLabel(new ImageIcon("C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\Apple\\Banana\\Apple.png"));
+        JLabel app1 = new JLabel(new ImageIcon(path + "Apple\\Classic\\Apple.png"));
+        JLabel app2 = new JLabel(new ImageIcon(path + "Apple\\Worm\\Apple.png"));
+        JLabel app3 = new JLabel(new ImageIcon(path + "Apple\\Gold\\Apple.png"));
+        JLabel app4 = new JLabel(new ImageIcon(path + "Apple\\Pear\\Apple.png"));
+        JLabel app5 = new JLabel(new ImageIcon(path + "Apple\\Banana\\Apple.png"));
         app1.setBounds(60,50,25,25);
         app2.setBounds(240,50,25,25);
         app3.setBounds(420,50,25,25);
