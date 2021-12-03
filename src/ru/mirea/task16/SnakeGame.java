@@ -425,10 +425,13 @@ public class SnakeGame extends JPanel implements  ActionListener {
                     menu.setVisible(false);
                     game.setVisible(true);
                 }
-                catch (NumberFormatException | NameException n) {
-                    JOptionPane.showMessageDialog(null, "Incorrect Name/Game Speed!", "alert", JOptionPane.ERROR_MESSAGE);
+                catch (NumberFormatException a) {
+                    JOptionPane.showMessageDialog(null, "Incorrect Game Speed!", "alert", JOptionPane.ERROR_MESSAGE);
                     speed_in.setText("100");
-                    //JOptionPane.showMessageDialog(null, "Incorrect player name!", "alert", JOptionPane.ERROR_MESSAGE);
+
+                }
+                catch (NameException n) {
+                    JOptionPane.showMessageDialog(null, "Incorrect player name!", "alert", JOptionPane.ERROR_MESSAGE);
                     Input.setText("");
                 }
             }
