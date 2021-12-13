@@ -108,3 +108,5 @@ Player: ghj Score: -9 Apple eaten: 0 Mon Nov 22 00:29:35 MSK 2021 278782296
 Player: ghj Score: -19 Apple eaten: 0 Mon Nov 22 00:29:42 MSK 2021 278782296
 Player: No Name Score: 74 Apple eaten: 1 Mon Nov 22 00:32:47 MSK 2021 888263690
 Player: No Name Score: -4 Apple eaten: 0 Mon Nov 22 00:32:55 MSK 2021 888263690
+Player: No Name Score: 269 Apple eaten: 4 Mon Dec 13 23:47:07 MSK 2021 2092570419
+Player: No Name Score: 498 Apple eaten: 8 Mon Dec 13 23:49:25 MSK 2021 1475688421

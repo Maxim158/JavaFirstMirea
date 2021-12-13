@@ -4,9 +4,7 @@ import javax.naming.Name;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
@@ -35,7 +33,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
             super(name);
         }
     }
-    private String path = "C:\\Users\\IVC1-5\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\";
+    private String path = "C:\\Users\\user\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task16\\";
     private MainWindow game;
     private JFrame menu;
     private back_color background = back_color.black;
@@ -51,7 +49,8 @@ public class SnakeGame extends JPanel implements  ActionListener {
     private final int ALL_DOTS = 945;
     private int GAME_SPEED = 100;
     private boolean border = false;
-    private int score = 0;
+    private long score = 0;
+    private long coins = 0;
     private String name = "No Name";
     private int apple_eaten = 0;
     private Image apple;
@@ -70,8 +69,9 @@ public class SnakeGame extends JPanel implements  ActionListener {
     private boolean inGame = true;
     private boolean ready = true;
 
-    public SnakeGame(MainWindow gamewindow) {
+    public SnakeGame(MainWindow gamewindow, SavedGame save) {
        this.game = gamewindow;
+       this.coins = save.getCoins();
         Menu(game);
     }
 
@@ -105,6 +105,7 @@ public class SnakeGame extends JPanel implements  ActionListener {
         if (x[0] == appleX && y[0] == appleY) {
             dots++;
             apple_eaten ++;
+            coins ++;
             score += 100;
             if(dots != ALL_DOTS) {
                 createApple();
@@ -300,6 +301,18 @@ public class SnakeGame extends JPanel implements  ActionListener {
             g.drawString("Game Over! Press any key to continue...",SIZEX/2 - 100,SIZEY/2);
             border = false;
             timer.stop();
+            FileInputStream fileInputStream = null;
+            try {
+                SavedGame save = new SavedGame(coins);
+                FileOutputStream outputStream = new FileOutputStream(path + "save.ser");
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+                objectOutputStream.writeObject(save);
+                objectOutputStream.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             scoreBuild();
         } else {
             g.setColor(Color.WHITE);
@@ -370,11 +383,18 @@ public class SnakeGame extends JPanel implements  ActionListener {
         menu.setLayout(null);
         JLabel gamePic = new JLabel(new ImageIcon(path + "Snake\\Green\\Snake_head_up.png"));
         gamePic.setBounds(280, 10, 25, 25);
+        JLabel coinsPic = new JLabel(new ImageIcon(path + "coins.png"));
+        coinsPic.setBounds(440, 10, 40, 40);
+        JLabel coinsText = new JLabel("Coins: " + Long.toString(coins));
+        coinsText.setFont(new Font("Serif", Font.PLAIN, 20));
+        coinsText.setBounds(340, 10, 120, 40);
         JLabel gameName = new JLabel("SNAKE");
         gameName.setFont(new Font("Serif", Font.PLAIN, 28));
         gameName.setBounds(175, 5, 150, 30);
         menu.add(gameName);
         menu.add(gamePic);
+        menu.add(coinsPic);
+        menu.add(coinsText);
         JTextField Input = new JTextField(10);
         Input.setBounds(10, 70, 150, 30);
         Input.setText("");
